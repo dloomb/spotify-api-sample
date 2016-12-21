@@ -1,0 +1,1041 @@
+{
+	"albums": {
+		"href": "https://api.spotify.com/v1/search?query=Abcd&offset=0&limit=10&type=album",
+		"items": [
+      {
+				  "album_type": "album",
+				  "artists": [
+							  {
+							  "external_urls": {
+							  "spotify": "https://open.spotify.com/artist/1mBydYMVBECdDmMfE2sEUO"
+							  },
+							  "href": "https://api.spotify.com/v1/artists/1mBydYMVBECdDmMfE2sEUO",
+							  "id": "1mBydYMVBECdDmMfE2sEUO",
+							  "name": "Sachin-Jigar",
+							  "type": "artist",
+							  "uri": "spotify:artist:1mBydYMVBECdDmMfE2sEUO"
+							  }
+							  ],
+				  "available_markets": [
+          "AD",
+          "AR",
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BO",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CO",
+          "CR",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "DO",
+          "EC",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "GT",
+          "HK",
+          "HN",
+          "HU",
+          "ID",
+          "IE",
+          "IS",
+          "IT",
+          "JP",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MT",
+          "MX",
+          "MY",
+          "NI",
+          "NL",
+          "NO",
+          "NZ",
+          "PA",
+          "PE",
+          "PH",
+          "PL",
+          "PT",
+          "PY",
+          "SE",
+          "SG",
+          "SK",
+          "SV",
+          "TR",
+          "TW",
+          "US",
+          "UY"
+										],
+				  "external_urls": {
+				  "spotify": "https://open.spotify.com/album/5ZwLv27mDGPJqZjhHxElHT"
+				  },
+				  "href": "https://api.spotify.com/v1/albums/5ZwLv27mDGPJqZjhHxElHT",
+				  "id": "5ZwLv27mDGPJqZjhHxElHT",
+				  "images": [
+							 {
+							 "height": 640,
+							 "url": "https://i.scdn.co/image/c94fb1dce70e32b7561a6ce87e8d68bd58ee04e1",
+							 "width": 640
+							 },
+							 {
+							 "height": 300,
+							 "url": "https://i.scdn.co/image/5ade613f0c6275885010fa08d8a9589adfa34666",
+							 "width": 300
+							 },
+							 {
+							 "height": 64,
+							 "url": "https://i.scdn.co/image/3a293834e2022ca6023bd1af5c46d1384cc2d403",
+							 "width": 64
+							 }
+        ],
+				  "name": "ABCD - Any Body Can Dance (Original Motion Picture Soundtrack)",
+				  "type": "album",
+				  "uri": "spotify:album:5ZwLv27mDGPJqZjhHxElHT"
+      },
+      {
+				  "album_type": "single",
+				  "artists": [
+							  {
+							  "external_urls": {
+							  "spotify": "https://open.spotify.com/artist/4gilUkfLJ3v5bIOAsuSYxc"
+							  },
+							  "href": "https://api.spotify.com/v1/artists/4gilUkfLJ3v5bIOAsuSYxc",
+							  "id": "4gilUkfLJ3v5bIOAsuSYxc",
+							  "name": "Asli Baat",
+							  "type": "artist",
+							  "uri": "spotify:artist:4gilUkfLJ3v5bIOAsuSYxc"
+							  }
+							  ],
+				  "available_markets": [
+          "AD",
+          "AR",
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BO",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CO",
+          "CR",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "DO",
+          "EC",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "GT",
+          "HK",
+          "HN",
+          "HU",
+          "ID",
+          "IE",
+          "IS",
+          "IT",
+          "JP",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MT",
+          "MX",
+          "MY",
+          "NI",
+          "NL",
+          "NO",
+          "NZ",
+          "PA",
+          "PE",
+          "PH",
+          "PL",
+          "PT",
+          "PY",
+          "SE",
+          "SG",
+          "SK",
+          "SV",
+          "TR",
+          "TW",
+          "US",
+          "UY"
+										],
+				  "external_urls": {
+				  "spotify": "https://open.spotify.com/album/1O6WyLIn11Jvqqgk3liM7p"
+				  },
+				  "href": "https://api.spotify.com/v1/albums/1O6WyLIn11Jvqqgk3liM7p",
+				  "id": "1O6WyLIn11Jvqqgk3liM7p",
+				  "images": [
+							 {
+							 "height": 640,
+							 "url": "https://i.scdn.co/image/99aa1adc21f6d246ceddbd9c4b671b7d28807af9",
+							 "width": 640
+							 },
+							 {
+							 "height": 300,
+							 "url": "https://i.scdn.co/image/908aa42f0ff4d95dd5b17ccaf6251432ba9461cb",
+							 "width": 300
+							 },
+							 {
+							 "height": 64,
+							 "url": "https://i.scdn.co/image/734badc124311616fc3313eb8e07270f6872fccf",
+							 "width": 64
+							 }
+        ],
+				  "name": "ABCD",
+				  "type": "album",
+				  "uri": "spotify:album:1O6WyLIn11Jvqqgk3liM7p"
+      },
+      {
+				  "album_type": "single",
+				  "artists": [
+							  {
+							  "external_urls": {
+							  "spotify": "https://open.spotify.com/artist/0EyNlW0BvGA4dd3xWbzpaE"
+							  },
+							  "href": "https://api.spotify.com/v1/artists/0EyNlW0BvGA4dd3xWbzpaE",
+							  "id": "0EyNlW0BvGA4dd3xWbzpaE",
+							  "name": "Himuro",
+							  "type": "artist",
+							  "uri": "spotify:artist:0EyNlW0BvGA4dd3xWbzpaE"
+							  }
+							  ],
+				  "available_markets": [
+          "AD",
+          "AR",
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BO",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CO",
+          "CR",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "DO",
+          "EC",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "GT",
+          "HK",
+          "HN",
+          "HU",
+          "ID",
+          "IE",
+          "IS",
+          "IT",
+          "JP",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MT",
+          "MX",
+          "MY",
+          "NI",
+          "NL",
+          "NO",
+          "NZ",
+          "PA",
+          "PE",
+          "PH",
+          "PL",
+          "PT",
+          "PY",
+          "SE",
+          "SG",
+          "SK",
+          "SV",
+          "TR",
+          "TW",
+          "US",
+          "UY"
+										],
+				  "external_urls": {
+				  "spotify": "https://open.spotify.com/album/7oERNLMztzGjX4BlCoabmO"
+				  },
+				  "href": "https://api.spotify.com/v1/albums/7oERNLMztzGjX4BlCoabmO",
+				  "id": "7oERNLMztzGjX4BlCoabmO",
+				  "images": [
+							 {
+							 "height": 640,
+							 "url": "https://i.scdn.co/image/5d284ca57c0efa0b2077c9e2659167a4bcb5a5eb",
+							 "width": 640
+							 },
+							 {
+							 "height": 300,
+							 "url": "https://i.scdn.co/image/e6a35932b573212feb5dce982714f06994e88fd0",
+							 "width": 300
+							 },
+							 {
+							 "height": 64,
+							 "url": "https://i.scdn.co/image/dc8ca9f97b21cd0ec66169f7ba714015eb0cb5eb",
+							 "width": 64
+							 }
+        ],
+				  "name": "Abcd",
+				  "type": "album",
+				  "uri": "spotify:album:7oERNLMztzGjX4BlCoabmO"
+      },
+      {
+				  "album_type": "album",
+				  "artists": [
+							  {
+							  "external_urls": {
+							  "spotify": "https://open.spotify.com/artist/1CBC9JXYvhdRvbaoOwGtCa"
+							  },
+							  "href": "https://api.spotify.com/v1/artists/1CBC9JXYvhdRvbaoOwGtCa",
+							  "id": "1CBC9JXYvhdRvbaoOwGtCa",
+							  "name": "Konso Diam Band",
+							  "type": "artist",
+							  "uri": "spotify:artist:1CBC9JXYvhdRvbaoOwGtCa"
+							  }
+							  ],
+				  "available_markets": [
+          "AD",
+          "AR",
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BO",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CO",
+          "CR",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "DO",
+          "EC",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "GT",
+          "HK",
+          "HN",
+          "HU",
+          "ID",
+          "IE",
+          "IS",
+          "IT",
+          "JP",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MT",
+          "MX",
+          "MY",
+          "NI",
+          "NL",
+          "NO",
+          "NZ",
+          "PA",
+          "PE",
+          "PH",
+          "PL",
+          "PT",
+          "PY",
+          "SE",
+          "SG",
+          "SK",
+          "SV",
+          "TR",
+          "TW",
+          "US",
+          "UY"
+										],
+				  "external_urls": {
+				  "spotify": "https://open.spotify.com/album/4zzyaF6TpcVjaWHw8diVZo"
+				  },
+				  "href": "https://api.spotify.com/v1/albums/4zzyaF6TpcVjaWHw8diVZo",
+				  "id": "4zzyaF6TpcVjaWHw8diVZo",
+				  "images": [
+							 {
+							 "height": 640,
+							 "url": "https://i.scdn.co/image/da2b8ec96e160cb668082892c9676801f8b0b686",
+							 "width": 640
+							 },
+							 {
+							 "height": 300,
+							 "url": "https://i.scdn.co/image/4a3a059c5fe6f4073a8cb19724c011859857b707",
+							 "width": 300
+							 },
+							 {
+							 "height": 64,
+							 "url": "https://i.scdn.co/image/065274f95e213e9b826dd52cbd3ee8ed505cb69f",
+							 "width": 64
+							 }
+        ],
+				  "name": "Abcd",
+				  "type": "album",
+				  "uri": "spotify:album:4zzyaF6TpcVjaWHw8diVZo"
+      },
+      {
+				  "album_type": "album",
+				  "artists": [
+							  {
+							  "external_urls": {
+							  "spotify": "https://open.spotify.com/artist/2zYqRkYtHSMeVbDKSpeOvd"
+							  },
+							  "href": "https://api.spotify.com/v1/artists/2zYqRkYtHSMeVbDKSpeOvd",
+							  "id": "2zYqRkYtHSMeVbDKSpeOvd",
+							  "name": "Braxton Anthony",
+							  "type": "artist",
+							  "uri": "spotify:artist:2zYqRkYtHSMeVbDKSpeOvd"
+							  },
+							  {
+							  "external_urls": {
+							  "spotify": "https://open.spotify.com/artist/7q06kVOkGfwCeByPuKRhf1"
+							  },
+							  "href": "https://api.spotify.com/v1/artists/7q06kVOkGfwCeByPuKRhf1",
+							  "id": "7q06kVOkGfwCeByPuKRhf1",
+							  "name": "Dahlgren Chris",
+							  "type": "artist",
+							  "uri": "spotify:artist:7q06kVOkGfwCeByPuKRhf1"
+							  }
+							  ],
+				  "available_markets": [
+          "AD",
+          "AR",
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BO",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CO",
+          "CR",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "DO",
+          "EC",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "GT",
+          "HK",
+          "HN",
+          "HU",
+          "ID",
+          "IE",
+          "IS",
+          "IT",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MT",
+          "MX",
+          "MY",
+          "NI",
+          "NL",
+          "NO",
+          "NZ",
+          "PA",
+          "PE",
+          "PH",
+          "PL",
+          "PT",
+          "PY",
+          "SE",
+          "SG",
+          "SK",
+          "SV",
+          "TR",
+          "TW",
+          "US",
+          "UY"
+										],
+				  "external_urls": {
+				  "spotify": "https://open.spotify.com/album/2VncfZXQTYYxhu128dNAEc"
+				  },
+				  "href": "https://api.spotify.com/v1/albums/2VncfZXQTYYxhu128dNAEc",
+				  "id": "2VncfZXQTYYxhu128dNAEc",
+				  "images": [
+							 {
+							 "height": 640,
+							 "url": "https://i.scdn.co/image/691879bc5f05c762868c2852a779e1f3ca45311e",
+							 "width": 640
+							 },
+							 {
+							 "height": 300,
+							 "url": "https://i.scdn.co/image/0cd3a0f73d80e2f9339511bc5424a565d821b9dc",
+							 "width": 300
+							 },
+							 {
+							 "height": 64,
+							 "url": "https://i.scdn.co/image/206d1ce30110798881db8a3be45d4bbc230c1580",
+							 "width": 64
+							 }
+        ],
+				  "name": "ABCD",
+				  "type": "album",
+				  "uri": "spotify:album:2VncfZXQTYYxhu128dNAEc"
+      },
+      {
+				  "album_type": "album",
+				  "artists": [
+							  {
+							  "external_urls": {
+							  "spotify": "https://open.spotify.com/artist/5zSWzlywIVQAkUH8jQP0Rd"
+							  },
+							  "href": "https://api.spotify.com/v1/artists/5zSWzlywIVQAkUH8jQP0Rd",
+							  "id": "5zSWzlywIVQAkUH8jQP0Rd",
+							  "name": "Deirdre Broderick",
+							  "type": "artist",
+							  "uri": "spotify:artist:5zSWzlywIVQAkUH8jQP0Rd"
+							  }
+							  ],
+				  "available_markets": [
+          "AD",
+          "AR",
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BO",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CO",
+          "CR",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "DO",
+          "EC",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "GT",
+          "HK",
+          "HN",
+          "HU",
+          "ID",
+          "IE",
+          "IS",
+          "IT",
+          "JP",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MT",
+          "MX",
+          "MY",
+          "NI",
+          "NL",
+          "NO",
+          "NZ",
+          "PA",
+          "PE",
+          "PH",
+          "PL",
+          "PT",
+          "PY",
+          "SE",
+          "SG",
+          "SK",
+          "SV",
+          "TR",
+          "TW",
+          "US",
+          "UY"
+										],
+				  "external_urls": {
+				  "spotify": "https://open.spotify.com/album/0DcLlyvwOXtAdoGhwfWcc1"
+				  },
+				  "href": "https://api.spotify.com/v1/albums/0DcLlyvwOXtAdoGhwfWcc1",
+				  "id": "0DcLlyvwOXtAdoGhwfWcc1",
+				  "images": [
+							 {
+							 "height": 640,
+							 "url": "https://i.scdn.co/image/74575d6fd18bc801e43f87551aea12a363e56618",
+							 "width": 640
+							 },
+							 {
+							 "height": 300,
+							 "url": "https://i.scdn.co/image/063170030139641e6eb6b26198ca2fd78ad4b4b9",
+							 "width": 300
+							 },
+							 {
+							 "height": 64,
+							 "url": "https://i.scdn.co/image/c010145fd2787cd8d6ceccb4a8c6d1dabee79b5b",
+							 "width": 64
+							 }
+        ],
+				  "name": "Abcd",
+				  "type": "album",
+				  "uri": "spotify:album:0DcLlyvwOXtAdoGhwfWcc1"
+      },
+      {
+				  "album_type": "album",
+				  "artists": [
+							  {
+							  "external_urls": {
+							  "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+							  },
+							  "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+							  "id": "0LyfQWJT6nXafLPZqxe9Of",
+							  "name": "Various Artists",
+							  "type": "artist",
+							  "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+							  }
+							  ],
+				  "available_markets": [
+          "AD",
+          "AR",
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BO",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CO",
+          "CR",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "DO",
+          "EC",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "GT",
+          "HK",
+          "HN",
+          "HU",
+          "ID",
+          "IE",
+          "IS",
+          "IT",
+          "JP",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MT",
+          "MX",
+          "MY",
+          "NI",
+          "NL",
+          "NO",
+          "NZ",
+          "PA",
+          "PE",
+          "PH",
+          "PL",
+          "PT",
+          "PY",
+          "SE",
+          "SG",
+          "SK",
+          "SV",
+          "TR",
+          "TW",
+          "US",
+          "UY"
+										],
+				  "external_urls": {
+				  "spotify": "https://open.spotify.com/album/6QEBKnWx11RNn7EnmEepbH"
+				  },
+				  "href": "https://api.spotify.com/v1/albums/6QEBKnWx11RNn7EnmEepbH",
+				  "id": "6QEBKnWx11RNn7EnmEepbH",
+				  "images": [
+							 {
+							 "height": 640,
+							 "url": "https://i.scdn.co/image/fe725b76c2771e06f2a8fca569709f6b794ed1de",
+							 "width": 640
+							 },
+							 {
+							 "height": 300,
+							 "url": "https://i.scdn.co/image/f174e269b2ce677c2b7f579f71f0f0e5d49e200c",
+							 "width": 300
+							 },
+							 {
+							 "height": 64,
+							 "url": "https://i.scdn.co/image/1d4a1e2cf54df2ed1e597a9947b0880d4173cbbc",
+							 "width": 64
+							 }
+        ],
+				  "name": "ÄBCD",
+				  "type": "album",
+				  "uri": "spotify:album:6QEBKnWx11RNn7EnmEepbH"
+      },
+      {
+				  "album_type": "single",
+				  "artists": [
+							  {
+							  "external_urls": {
+							  "spotify": "https://open.spotify.com/artist/7BAGYVtfDnFcPr5L3H3NQJ"
+							  },
+							  "href": "https://api.spotify.com/v1/artists/7BAGYVtfDnFcPr5L3H3NQJ",
+							  "id": "7BAGYVtfDnFcPr5L3H3NQJ",
+							  "name": "Mac Jody The Don",
+							  "type": "artist",
+							  "uri": "spotify:artist:7BAGYVtfDnFcPr5L3H3NQJ"
+							  }
+							  ],
+				  "available_markets": [
+          "AD",
+          "AR",
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BO",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CO",
+          "CR",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "DO",
+          "EC",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "GT",
+          "HK",
+          "HN",
+          "HU",
+          "ID",
+          "IE",
+          "IS",
+          "IT",
+          "JP",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MT",
+          "MX",
+          "MY",
+          "NI",
+          "NL",
+          "NO",
+          "NZ",
+          "PA",
+          "PE",
+          "PH",
+          "PL",
+          "PT",
+          "PY",
+          "SE",
+          "SG",
+          "SK",
+          "SV",
+          "TR",
+          "TW",
+          "US",
+          "UY"
+										],
+				  "external_urls": {
+				  "spotify": "https://open.spotify.com/album/6iY0bmvSVJSScWI6ckN2ej"
+				  },
+				  "href": "https://api.spotify.com/v1/albums/6iY0bmvSVJSScWI6ckN2ej",
+				  "id": "6iY0bmvSVJSScWI6ckN2ej",
+				  "images": [
+							 {
+							 "height": 640,
+							 "url": "https://i.scdn.co/image/8d544b35d0da52fa06d2ec4e683087d67003e9e0",
+							 "width": 640
+							 },
+							 {
+							 "height": 300,
+							 "url": "https://i.scdn.co/image/52df3905b77e3e4a1e611f31f692cb8759afbcfe",
+							 "width": 300
+							 },
+							 {
+							 "height": 64,
+							 "url": "https://i.scdn.co/image/17cf85bcfdfde08658a0c98365829ca9fabffab1",
+							 "width": 64
+							 }
+        ],
+				  "name": "ABCD",
+				  "type": "album",
+				  "uri": "spotify:album:6iY0bmvSVJSScWI6ckN2ej"
+      },
+      {
+				  "album_type": "single",
+				  "artists": [
+							  {
+							  "external_urls": {
+							  "spotify": "https://open.spotify.com/artist/5W5mSHi5P8qrEfObU2VIv0"
+							  },
+							  "href": "https://api.spotify.com/v1/artists/5W5mSHi5P8qrEfObU2VIv0",
+							  "id": "5W5mSHi5P8qrEfObU2VIv0",
+							  "name": "Almir Ljusa",
+							  "type": "artist",
+							  "uri": "spotify:artist:5W5mSHi5P8qrEfObU2VIv0"
+							  }
+							  ],
+				  "available_markets": [
+          "AD",
+          "AR",
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BO",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CO",
+          "CR",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "DO",
+          "EC",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "GT",
+          "HK",
+          "HN",
+          "HU",
+          "ID",
+          "IE",
+          "IS",
+          "IT",
+          "JP",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MT",
+          "MX",
+          "MY",
+          "NI",
+          "NL",
+          "NO",
+          "NZ",
+          "PA",
+          "PE",
+          "PH",
+          "PL",
+          "PT",
+          "PY",
+          "SE",
+          "SG",
+          "SK",
+          "SV",
+          "TR",
+          "TW",
+          "US",
+          "UY"
+										],
+				  "external_urls": {
+				  "spotify": "https://open.spotify.com/album/01x9avZVdO1b0XMxEH4mmy"
+				  },
+				  "href": "https://api.spotify.com/v1/albums/01x9avZVdO1b0XMxEH4mmy",
+				  "id": "01x9avZVdO1b0XMxEH4mmy",
+				  "images": [
+							 {
+							 "height": 640,
+							 "url": "https://i.scdn.co/image/63d38c2d757ca2664883e60ff500a718f2f768b4",
+							 "width": 640
+							 },
+							 {
+							 "height": 300,
+							 "url": "https://i.scdn.co/image/fd2d0c71e1daa6cdcbd9a8ee7d27eb92026de45f",
+							 "width": 300
+							 },
+							 {
+							 "height": 64,
+							 "url": "https://i.scdn.co/image/55efdbdece799041406947a668b83dbaa784fd69",
+							 "width": 64
+							 }
+        ],
+				  "name": "A.B.C.D.",
+				  "type": "album",
+				  "uri": "spotify:album:01x9avZVdO1b0XMxEH4mmy"
+      },
+      {
+				  "album_type": "single",
+				  "artists": [
+							  {
+							  "external_urls": {
+							  "spotify": "https://open.spotify.com/artist/4TjGlxmI4FTT2NhwDNL7q2"
+							  },
+							  "href": "https://api.spotify.com/v1/artists/4TjGlxmI4FTT2NhwDNL7q2",
+							  "id": "4TjGlxmI4FTT2NhwDNL7q2",
+							  "name": "Radiorama",
+							  "type": "artist",
+							  "uri": "spotify:artist:4TjGlxmI4FTT2NhwDNL7q2"
+							  }
+							  ],
+				  "available_markets": [
+          "AD",
+          "AR",
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BO",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CO",
+          "CR",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "DO",
+          "EC",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "GT",
+          "HK",
+          "HN",
+          "HU",
+          "ID",
+          "IE",
+          "IS",
+          "IT",
+          "JP",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MC",
+          "MT",
+          "MX",
+          "MY",
+          "NI",
+          "NL",
+          "NO",
+          "NZ",
+          "PA",
+          "PE",
+          "PH",
+          "PL",
+          "PT",
+          "PY",
+          "SE",
+          "SG",
+          "SK",
+          "SV",
+          "TR",
+          "TW",
+          "US",
+          "UY"
+										],
+				  "external_urls": {
+				  "spotify": "https://open.spotify.com/album/7rgoEKSkNPJqzIDLHOGzHY"
+				  },
+				  "href": "https://api.spotify.com/v1/albums/7rgoEKSkNPJqzIDLHOGzHY",
+				  "id": "7rgoEKSkNPJqzIDLHOGzHY",
+				  "images": [
+							 {
+							 "height": 640,
+							 "url": "https://i.scdn.co/image/d179739285c98836a081145fc8890978a5c924b5",
+							 "width": 640
+							 },
+							 {
+							 "height": 300,
+							 "url": "https://i.scdn.co/image/325274cd7f362e778a8f6802ddc6fc0bd4215de1",
+							 "width": 300
+							 },
+							 {
+							 "height": 64,
+							 "url": "https://i.scdn.co/image/abdb5a3e1f6091ea2ae4bc2bd5b8e7b2a2340474",
+							 "width": 64
+							 }
+        ],
+				  "name": "ABCD",
+				  "type": "album",
+				  "uri": "spotify:album:7rgoEKSkNPJqzIDLHOGzHY"
+      }
+				  ],
+		"limit": 10,
+		"next": "https://api.spotify.com/v1/search?query=Abcd&offset=10&limit=10&type=album",
+		"offset": 0,
+		"previous": null,
+		"total": 33
+	}
+}
