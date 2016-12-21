@@ -20,13 +20,20 @@
 		9F62470C1E0A451F00C1DDF2 /* HIHMockHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F62470A1E0A451C00C1DDF2 /* HIHMockHttpClient.m */; };
 		9F62470D1E0A452000C1DDF2 /* HIHMockHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F62470A1E0A451C00C1DDF2 /* HIHMockHttpClient.m */; };
 		9F6247131E0A4C1D00C1DDF2 /* HIHSearchServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6247111E0A4C1900C1DDF2 /* HIHSearchServiceTests.m */; };
-		9F6247141E0A4C1F00C1DDF2 /* HIHSearchViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6247121E0A4C1900C1DDF2 /* HIHSearchViewControllerUITests.m */; };
 		9F6247171E0A541B00C1DDF2 /* query_ok_200_res.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F62470F1E0A4A2900C1DDF2 /* query_ok_200_res.json */; };
 		9F6247181E0A541B00C1DDF2 /* query_bad_400_res.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F6247151E0A541400C1DDF2 /* query_bad_400_res.json */; };
 		9F6247191E0A54EA00C1DDF2 /* query_ok_200_res.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F62470F1E0A4A2900C1DDF2 /* query_ok_200_res.json */; };
 		9F62471A1E0A54ED00C1DDF2 /* query_bad_400_res.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F6247151E0A541400C1DDF2 /* query_bad_400_res.json */; };
 		9F62471D1E0A5EF100C1DDF2 /* HIHSearchAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F62471C1E0A5EF100C1DDF2 /* HIHSearchAlbumCell.m */; };
 		9F6247201E0A658400C1DDF2 /* HIHImageCacheService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F62471F1E0A658400C1DDF2 /* HIHImageCacheService.m */; };
+		9F6247241E0AEC9600C1DDF2 /* HIHAlbumDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6247231E0AEC9600C1DDF2 /* HIHAlbumDisplayViewController.m */; };
+		9FFC0F241E0B1DDB00EF64BE /* HIHAlbumDisplayTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFC0F231E0B1DDB00EF64BE /* HIHAlbumDisplayTransitionAnimator.m */; };
+		9FFC0F2C1E0B3F2000EF64BE /* HIHAlbumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFC0F2B1E0B3F2000EF64BE /* HIHAlbumTests.m */; };
+		9FFC0F2E1E0B3F8200EF64BE /* album.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FFC0F2D1E0B3F8200EF64BE /* album.json */; };
+		9FFC0F2F1E0B400D00EF64BE /* album.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FFC0F2D1E0B3F8200EF64BE /* album.json */; };
+		9FFC0F311E0B421900EF64BE /* HIHImageCacheServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFC0F301E0B421900EF64BE /* HIHImageCacheServiceTests.m */; };
+		9FFC0F331E0B477500EF64BE /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FFC0F321E0B477500EF64BE /* test.png */; };
+		9FFC0F341E0B47BC00EF64BE /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FFC0F321E0B477500EF64BE /* test.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,12 +81,19 @@
 		9F62470A1E0A451C00C1DDF2 /* HIHMockHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HIHMockHttpClient.m; path = Source/Common/HIHMockHttpClient.m; sourceTree = "<group>"; };
 		9F62470F1E0A4A2900C1DDF2 /* query_ok_200_res.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = query_ok_200_res.json; path = Source/Search/Tests/query_ok_200_res.json; sourceTree = "<group>"; };
 		9F6247111E0A4C1900C1DDF2 /* HIHSearchServiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HIHSearchServiceTests.m; path = Source/Search/Tests/HIHSearchServiceTests.m; sourceTree = "<group>"; };
-		9F6247121E0A4C1900C1DDF2 /* HIHSearchViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HIHSearchViewControllerUITests.m; path = Source/Search/Tests/HIHSearchViewControllerUITests.m; sourceTree = "<group>"; };
 		9F6247151E0A541400C1DDF2 /* query_bad_400_res.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = query_bad_400_res.json; path = Source/Search/Tests/query_bad_400_res.json; sourceTree = "<group>"; };
 		9F62471B1E0A5EF100C1DDF2 /* HIHSearchAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HIHSearchAlbumCell.h; path = Source/Search/HIHSearchAlbumCell.h; sourceTree = "<group>"; };
 		9F62471C1E0A5EF100C1DDF2 /* HIHSearchAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HIHSearchAlbumCell.m; path = Source/Search/HIHSearchAlbumCell.m; sourceTree = "<group>"; };
 		9F62471E1E0A658400C1DDF2 /* HIHImageCacheService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HIHImageCacheService.h; path = Source/Common/HIHImageCacheService.h; sourceTree = "<group>"; };
 		9F62471F1E0A658400C1DDF2 /* HIHImageCacheService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HIHImageCacheService.m; path = Source/Common/HIHImageCacheService.m; sourceTree = "<group>"; };
+		9F6247221E0AEC9600C1DDF2 /* HIHAlbumDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HIHAlbumDisplayViewController.h; path = Source/AlbumDisplay/HIHAlbumDisplayViewController.h; sourceTree = "<group>"; };
+		9F6247231E0AEC9600C1DDF2 /* HIHAlbumDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HIHAlbumDisplayViewController.m; path = Source/AlbumDisplay/HIHAlbumDisplayViewController.m; sourceTree = "<group>"; };
+		9FFC0F221E0B1DDB00EF64BE /* HIHAlbumDisplayTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HIHAlbumDisplayTransitionAnimator.h; path = Source/AlbumDisplay/HIHAlbumDisplayTransitionAnimator.h; sourceTree = "<group>"; };
+		9FFC0F231E0B1DDB00EF64BE /* HIHAlbumDisplayTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HIHAlbumDisplayTransitionAnimator.m; path = Source/AlbumDisplay/HIHAlbumDisplayTransitionAnimator.m; sourceTree = "<group>"; };
+		9FFC0F2B1E0B3F2000EF64BE /* HIHAlbumTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HIHAlbumTests.m; path = Source/Common/Tests/HIHAlbumTests.m; sourceTree = "<group>"; };
+		9FFC0F2D1E0B3F8200EF64BE /* album.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = album.json; path = Source/Common/Tests/album.json; sourceTree = "<group>"; };
+		9FFC0F301E0B421900EF64BE /* HIHImageCacheServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HIHImageCacheServiceTests.m; path = Source/Common/Tests/HIHImageCacheServiceTests.m; sourceTree = "<group>"; };
+		9FFC0F321E0B477500EF64BE /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test.png; path = Source/Common/Tests/test.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +147,7 @@
 				9F6246E91E0A369E00C1DDF2 /* main.m */,
 				9F6246E71E0A369E00C1DDF2 /* AppDelegate.h */,
 				9F6246E81E0A369E00C1DDF2 /* AppDelegate.m */,
+				9F6247211E0AEC6700C1DDF2 /* AlbumDisplay */,
 				9F6246F01E0A36D500C1DDF2 /* Common */,
 				9F6246EC1E0A36BB00C1DDF2 /* Search */,
 			);
@@ -179,12 +194,11 @@
 		9F6246F01E0A36D500C1DDF2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				9FFC0F251E0B39E400EF64BE /* Tests */,
 				9F6246FF1E0A399300C1DDF2 /* HIHAlbum.h */,
 				9F6247001E0A399300C1DDF2 /* HIHAlbum.m */,
 				9F6247061E0A441D00C1DDF2 /* HIHHttpClient.h */,
 				9F6247071E0A441D00C1DDF2 /* HIHHttpClient.m */,
-				9F6247091E0A451C00C1DDF2 /* HIHMockHttpClient.h */,
-				9F62470A1E0A451C00C1DDF2 /* HIHMockHttpClient.m */,
 				9F62471E1E0A658400C1DDF2 /* HIHImageCacheService.h */,
 				9F62471F1E0A658400C1DDF2 /* HIHImageCacheService.m */,
 			);
@@ -197,7 +211,30 @@
 				9F62470F1E0A4A2900C1DDF2 /* query_ok_200_res.json */,
 				9F6247151E0A541400C1DDF2 /* query_bad_400_res.json */,
 				9F6247111E0A4C1900C1DDF2 /* HIHSearchServiceTests.m */,
-				9F6247121E0A4C1900C1DDF2 /* HIHSearchViewControllerUITests.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		9F6247211E0AEC6700C1DDF2 /* AlbumDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				9F6247221E0AEC9600C1DDF2 /* HIHAlbumDisplayViewController.h */,
+				9F6247231E0AEC9600C1DDF2 /* HIHAlbumDisplayViewController.m */,
+				9FFC0F221E0B1DDB00EF64BE /* HIHAlbumDisplayTransitionAnimator.h */,
+				9FFC0F231E0B1DDB00EF64BE /* HIHAlbumDisplayTransitionAnimator.m */,
+			);
+			name = AlbumDisplay;
+			sourceTree = "<group>";
+		};
+		9FFC0F251E0B39E400EF64BE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9FFC0F321E0B477500EF64BE /* test.png */,
+				9FFC0F2D1E0B3F8200EF64BE /* album.json */,
+				9FFC0F2B1E0B3F2000EF64BE /* HIHAlbumTests.m */,
+				9FFC0F301E0B421900EF64BE /* HIHImageCacheServiceTests.m */,
+				9F6247091E0A451C00C1DDF2 /* HIHMockHttpClient.h */,
+				9F62470A1E0A451C00C1DDF2 /* HIHMockHttpClient.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -312,6 +349,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F6246E41E0A368900C1DDF2 /* Assets.xcassets in Resources */,
+				9FFC0F2F1E0B400D00EF64BE /* album.json in Resources */,
+				9FFC0F341E0B47BC00EF64BE /* test.png in Resources */,
 				9F6246E61E0A368900C1DDF2 /* Main.storyboard in Resources */,
 				9F62471A1E0A54ED00C1DDF2 /* query_bad_400_res.json in Resources */,
 				9F6247191E0A54EA00C1DDF2 /* query_ok_200_res.json in Resources */,
@@ -324,7 +363,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F6247181E0A541B00C1DDF2 /* query_bad_400_res.json in Resources */,
+				9FFC0F2E1E0B3F8200EF64BE /* album.json in Resources */,
 				9F6247171E0A541B00C1DDF2 /* query_ok_200_res.json in Resources */,
+				9FFC0F331E0B477500EF64BE /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,8 +388,10 @@
 				9F6247201E0A658400C1DDF2 /* HIHImageCacheService.m in Sources */,
 				9F6247011E0A399300C1DDF2 /* HIHAlbum.m in Sources */,
 				9F6246F91E0A37A800C1DDF2 /* HIHSearchService.m in Sources */,
+				9FFC0F241E0B1DDB00EF64BE /* HIHAlbumDisplayTransitionAnimator.m in Sources */,
 				9F6246F61E0A379800C1DDF2 /* HIHSearchViewController.m in Sources */,
 				9F6246EA1E0A369E00C1DDF2 /* AppDelegate.m in Sources */,
+				9F6247241E0AEC9600C1DDF2 /* HIHAlbumDisplayViewController.m in Sources */,
 				9F6247041E0A3AD800C1DDF2 /* HIHSearchInputView.m in Sources */,
 				9F62471D1E0A5EF100C1DDF2 /* HIHSearchAlbumCell.m in Sources */,
 			);
@@ -358,7 +401,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FFC0F2C1E0B3F2000EF64BE /* HIHAlbumTests.m in Sources */,
 				9F62470C1E0A451F00C1DDF2 /* HIHMockHttpClient.m in Sources */,
+				9FFC0F311E0B421900EF64BE /* HIHImageCacheServiceTests.m in Sources */,
 				9F6247131E0A4C1D00C1DDF2 /* HIHSearchServiceTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,7 +413,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F62470D1E0A452000C1DDF2 /* HIHMockHttpClient.m in Sources */,
-				9F6247141E0A4C1F00C1DDF2 /* HIHSearchViewControllerUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +617,7 @@
 				9F6246D41E0A360B00C1DDF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F6246D51E0A360B00C1DDF2 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
 			isa = XCConfigurationList;
@@ -581,6 +626,7 @@
 				9F6246D71E0A360B00C1DDF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F6246D81E0A360B00C1DDF2 /* Build configuration list for PBXNativeTarget "UITests" */ = {
 			isa = XCConfigurationList;
@@ -589,6 +635,7 @@
 				9F6246DA1E0A360B00C1DDF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

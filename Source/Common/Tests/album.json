@@ -1,0 +1,102 @@
+{
+	"album_type": "album",
+	"artists": [
+				{
+				"external_urls": {
+				"spotify": "https://open.spotify.com/artist/1mBydYMVBECdDmMfE2sEUO"
+				},
+				"href": "https://api.spotify.com/v1/artists/1mBydYMVBECdDmMfE2sEUO",
+				"id": "1mBydYMVBECdDmMfE2sEUO",
+				"name": "Sachin-Jigar",
+				"type": "artist",
+				"uri": "spotify:artist:1mBydYMVBECdDmMfE2sEUO"
+				}
+				],
+	"available_markets": [
+						  "AD",
+						  "AR",
+						  "AT",
+						  "AU",
+						  "BE",
+						  "BG",
+						  "BO",
+						  "BR",
+						  "CA",
+						  "CH",
+						  "CL",
+						  "CO",
+						  "CR",
+						  "CY",
+						  "CZ",
+						  "DE",
+						  "DK",
+						  "DO",
+						  "EC",
+						  "EE",
+						  "ES",
+						  "FI",
+						  "FR",
+						  "GB",
+						  "GR",
+						  "GT",
+						  "HK",
+						  "HN",
+						  "HU",
+						  "ID",
+						  "IE",
+						  "IS",
+						  "IT",
+						  "JP",
+						  "LI",
+						  "LT",
+						  "LU",
+						  "LV",
+						  "MC",
+						  "MT",
+						  "MX",
+						  "MY",
+						  "NI",
+						  "NL",
+						  "NO",
+						  "NZ",
+						  "PA",
+						  "PE",
+						  "PH",
+						  "PL",
+						  "PT",
+						  "PY",
+						  "SE",
+						  "SG",
+						  "SK",
+						  "SV",
+						  "TR",
+						  "TW",
+						  "US",
+						  "UY"
+						  ],
+	"external_urls": {
+		"spotify": "https://open.spotify.com/album/5ZwLv27mDGPJqZjhHxElHT"
+	},
+	"href": "https://api.spotify.com/v1/albums/5ZwLv27mDGPJqZjhHxElHT",
+	"id": "5ZwLv27mDGPJqZjhHxElHT",
+	"images": [
+			   {
+			   "height": 640,
+			   "url": "https://i.scdn.co/image/c94fb1dce70e32b7561a6ce87e8d68bd58ee04e1",
+			   "width": 640
+			   },
+			   {
+			   "height": 300,
+			   "url": "https://i.scdn.co/image/5ade613f0c6275885010fa08d8a9589adfa34666",
+			   "width": 300
+			   },
+			   {
+			   "height": 64,
+			   "url": "https://i.scdn.co/image/3a293834e2022ca6023bd1af5c46d1384cc2d403",
+			   "width": 64
+			   }
+			   ],
+	"name": "ABCD - Any Body Can Dance (Original Motion Picture Soundtrack)",
+	"type": "album",
+	"uri": "spotify:album:5ZwLv27mDGPJqZjhHxElHT"
+}

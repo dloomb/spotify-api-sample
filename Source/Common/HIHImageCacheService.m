@@ -12,7 +12,7 @@ NSString * const HIHImageCacheDirectoryPath = @"HIHImageCache/";
 
 @implementation HIHImageCacheService
 
-+ (void)loadImageWithUrl:(NSString *)url completion:(void (^)(NSError * _Nullable, UIImage * _Nullable))completion {
++ (void)loadImageWithUrl:(NSString *)url completion:(void (^)(NSError * _Nullable error, UIImage * _Nullable image))completion {
 	
 	NSString *path = [self localPathForImageUrl:url];
 	
@@ -30,12 +30,12 @@ NSString * const HIHImageCacheDirectoryPath = @"HIHImageCache/";
 }
 
 + (NSString *)localPathForImageUrl:(NSString *)url {
-	NSString *key = [url stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
+	NSString *filename = [[[NSURL URLWithString:url] path] lastPathComponent];
 	NSString *tempDir = NSTemporaryDirectory();
-	return [tempDir stringByAppendingFormat:@"%@%@", HIHImageCacheDirectoryPath, key];
+	return [tempDir stringByAppendingFormat:@"%@%@", HIHImageCacheDirectoryPath, filename];
 }
 
-+ (void)downloadImageForUrl:(NSString *)url andSaveToPath:(NSString *)path completion:(void (^)(NSError * _Nullable, UIImage * _Nullable))completion {
++ (void)downloadImageForUrl:(NSString *)url andSaveToPath:(NSString *)path completion:(void (^)(NSError * _Nullable error, UIImage * _Nullable image))completion {
 	
 	NSURLSessionDataTask *downloadTask = [[NSURLSession sharedSession]
 										  dataTaskWithURL:[NSURL URLWithString:url] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
@@ -64,7 +64,7 @@ NSString * const HIHImageCacheDirectoryPath = @"HIHImageCache/";
 
 + (void)ensureCacheDirectoryExists {
 	NSString *directory = [NSTemporaryDirectory() stringByAppendingString:HIHImageCacheDirectoryPath];
-	[[NSFileManager defaultManager]createDirectoryAtPath:directory withIntermediateDirectories:NO attributes:nil error:nil];
+	[[NSFileManager defaultManager] createDirectoryAtPath:directory withIntermediateDirectories:NO attributes:nil error:nil];
 }
 
 

@@ -10,4 +10,6 @@
 
 @interface HIHSearchViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
 @end

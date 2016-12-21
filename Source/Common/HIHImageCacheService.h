@@ -11,6 +11,6 @@
 
 @interface HIHImageCacheService : NSObject
 
-+ (void)loadImageWithUrl:(NSString * _Nonnull)url completion:(void (^ _Nonnull)(NSError * _Nullable, UIImage * _Nullable))completion;
++ (void)loadImageWithUrl:(NSString * _Nonnull)url completion:(void (^ _Nonnull)(NSError * _Nullable error, UIImage * _Nullable image))completion;
 
 @end

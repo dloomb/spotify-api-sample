@@ -14,5 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *secondaryLabel;
 @property (weak, nonatomic) IBOutlet UIView *bottomBorderView;
+@property (weak, nonatomic) IBOutlet UIView *shadowView;
 
 @end

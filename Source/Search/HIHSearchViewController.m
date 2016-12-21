@@ -8,16 +8,17 @@
 
 #import "HIHSearchIndex.h"
 
+#import "HIHAlbumDisplayViewController.h"
+#import "HIHAlbumDisplayTransitionAnimator.h"
 #import "HIHAlbum.h"
 #import "HIHImageCacheService.h"
 
-@interface HIHSearchViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
+@interface HIHSearchViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UINavigationControllerDelegate>
 
 @property (nonnull, nonatomic, strong) HIHSearchService *searchService;
 @property (nonnull, nonatomic, strong) NSMutableArray *data;
 
 @property (weak, nonatomic) IBOutlet HIHSearchInputView *searchInputView;
-@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
 
@@ -30,8 +31,41 @@
 	self.data = [NSMutableArray array];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+	[super viewDidAppear:animated];
+	
+	self.navigationController.delegate = self;
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+	[super viewDidDisappear:animated];
+	
+	if (self.navigationController.delegate == self) {
+		self.navigationController.delegate = nil;
+	}
+}
+
+
+
 - (BOOL)prefersStatusBarHidden {
 	return true;
+}
+
+
+
+#pragma mark - Navigation Controller Delegate
+
+- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+								  animationControllerForOperation:(UINavigationControllerOperation)operation
+											   fromViewController:(UIViewController *)fromVC
+												 toViewController:(UIViewController *)toVC {
+	// Check if we're transitioning from this view controller to a DSLSecondViewController
+	if (fromVC == self && [toVC isKindOfClass:[HIHAlbumDisplayViewController class]]) {
+		return [[HIHAlbumDisplayTransitionAnimator alloc] init];
+	}
+	else {
+		return nil;
+	}
 }
 
 
@@ -70,6 +104,14 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
 	CGFloat width = CGRectGetWidth(collectionView.frame);
 	return CGSizeMake(width, 150);
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+	[self.searchInputView endEditing:true];
+	
+	HIHAlbumDisplayViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:HIHAlbumDisplayViewControllerStoryboardIdentifier];
+	controller.album = self.data[indexPath.item];
+	[self.navigationController pushViewController:controller animated:true];
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
