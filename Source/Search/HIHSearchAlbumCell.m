@@ -20,9 +20,6 @@
 - (void)awakeFromNib {
 	[super awakeFromNib];
 	
-	self.imageView.layer.cornerRadius = self.imageView.frame.size.width / 2;
-	self.imageView.clipsToBounds = true;
-	
 	self.shadowView.layer.cornerRadius = self.imageView.frame.size.width / 2;
 	self.shadowView.layer.shadowColor = [UIColor whiteColor].CGColor;
 	self.shadowView.layer.shadowOffset = CGSizeMake(0, 2);

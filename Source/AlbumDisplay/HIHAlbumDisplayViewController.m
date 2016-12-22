@@ -6,11 +6,11 @@
 //  Copyright © 2016 Daniel Loomb. All rights reserved.
 //
 
+
+#import "HIHAlbumDisplayIndex.h"
+
 #import "HIHSearchViewController.h"
-#import "HIHAlbumDisplayViewController.h"
-#import "HIHAlbumDisplayTransitionAnimator.h"
-#import "HIHImageCacheService.h"
-#import "HIHAlbum.h"
+#import "HIHCommonIndex.h"
 
 NSString * const HIHAlbumDisplayViewControllerStoryboardIdentifier = @"HIHAlbumDisplayViewControllerStoryboardIdentifier";
 
@@ -24,6 +24,9 @@ NSString * const HIHAlbumDisplayViewControllerStoryboardIdentifier = @"HIHAlbumD
 
 @end
 
+
+
+
 @implementation HIHAlbumDisplayViewController
 
 - (void)viewDidLoad {
@@ -31,6 +34,7 @@ NSString * const HIHAlbumDisplayViewControllerStoryboardIdentifier = @"HIHAlbumD
 	
 	self.albumNameLabel.text = self.album.title;
 	self.artistNameLabel.text = self.album.artist;
+	self.albumCoverImageView.image = nil;
 	
 	[HIHImageCacheService loadImageWithUrl:self.album.imageUrl completion:^(NSError * _Nullable error, UIImage * _Nullable image) {
 		
@@ -42,9 +46,6 @@ NSString * const HIHAlbumDisplayViewControllerStoryboardIdentifier = @"HIHAlbumD
 	}];
 	
 	self.navigationController.interactivePopGestureRecognizer.delegate = nil;
-	
-	self.albumCoverImageView.layer.cornerRadius = CGRectGetWidth(self.albumCoverImageView.frame) / 2.0;
-	self.albumCoverImageView.clipsToBounds = true;
 	
 	UIScreenEdgePanGestureRecognizer *popRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePopRecognizer:)];
 	popRecognizer.edges = UIRectEdgeLeft;
@@ -68,6 +69,9 @@ NSString * const HIHAlbumDisplayViewControllerStoryboardIdentifier = @"HIHAlbumD
 - (BOOL)prefersStatusBarHidden {
 	return true;
 }
+
+
+#pragma mark - Actions
 
 - (IBAction)onBackTouchUpInside:(UIButton *)sender {
 	[self.navigationController popViewControllerAnimated:true];
@@ -104,21 +108,20 @@ NSString * const HIHAlbumDisplayViewControllerStoryboardIdentifier = @"HIHAlbumD
 
 #pragma mark UIGestureRecognizer handlers
 
+/**
+ Used in conjunction with HIHAlbumDisplayTransitionAnimator and UINavigationControllers interactivePopGesure
+ */
 - (void)handlePopRecognizer:(UIScreenEdgePanGestureRecognizer*)recognizer {
 	CGFloat progress = [recognizer translationInView:self.view].x / (self.view.bounds.size.width * 1.0);
 	progress = MIN(1.0, MAX(0.0, progress));
 	
 	if (recognizer.state == UIGestureRecognizerStateBegan) {
-		// Create a interactive transition and pop the view controller
 		self.interactivePopTransition = [[UIPercentDrivenInteractiveTransition alloc] init];
 		[self.navigationController popViewControllerAnimated:YES];
 	} else if (recognizer.state == UIGestureRecognizerStateChanged) {
-		// Update the interactive transition's progress
 		[self.interactivePopTransition updateInteractiveTransition:progress];
 	} else if (recognizer.state == UIGestureRecognizerStateEnded || recognizer.state == UIGestureRecognizerStateCancelled) {
-		// Finish the interactive transition
 		[self.interactivePopTransition finishInteractiveTransition];
-		
 		self.interactivePopTransition = nil;
 	}
 	

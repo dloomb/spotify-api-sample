@@ -8,10 +8,8 @@
 
 #import "HIHSearchIndex.h"
 
-#import "HIHAlbumDisplayViewController.h"
-#import "HIHAlbumDisplayTransitionAnimator.h"
-#import "HIHAlbum.h"
-#import "HIHImageCacheService.h"
+#import "HIHAlbumDisplayIndex.h"
+#import "HIHCommonIndex.h"
 
 @interface HIHSearchViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UINavigationControllerDelegate>
 

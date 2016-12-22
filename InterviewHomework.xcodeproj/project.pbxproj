@@ -33,6 +33,8 @@
 		9FFC0F331E0B477500EF64BE /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FFC0F321E0B477500EF64BE /* test.png */; };
 		9FFC0F341E0B47BC00EF64BE /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FFC0F321E0B477500EF64BE /* test.png */; };
 		9FFC0F3B1E0B5B4800EF64BE /* HIHMockUrlSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFC0F391E0B5B4300EF64BE /* HIHMockUrlSession.m */; };
+		9FFC0F521E0B987600EF64BE /* HIHAlbumDisplayTransitionAnimatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFC0F511E0B987600EF64BE /* HIHAlbumDisplayTransitionAnimatorTests.m */; };
+		9FFC0F551E0C403200EF64BE /* HIHRoundedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFC0F541E0C403200EF64BE /* HIHRoundedImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,11 @@
 		9FFC0F321E0B477500EF64BE /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test.png; path = Source/Common/Tests/test.png; sourceTree = "<group>"; };
 		9FFC0F381E0B5B4300EF64BE /* HIHMockUrlSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HIHMockUrlSession.h; path = Source/Common/Tests/HIHMockUrlSession.h; sourceTree = "<group>"; };
 		9FFC0F391E0B5B4300EF64BE /* HIHMockUrlSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HIHMockUrlSession.m; path = Source/Common/Tests/HIHMockUrlSession.m; sourceTree = "<group>"; };
+		9FFC0F4E1E0B951700EF64BE /* HIHCommonIndex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HIHCommonIndex.h; path = Source/Common/HIHCommonIndex.h; sourceTree = "<group>"; };
+		9FFC0F4F1E0B964F00EF64BE /* HIHAlbumDisplayIndex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HIHAlbumDisplayIndex.h; path = Source/AlbumDisplay/HIHAlbumDisplayIndex.h; sourceTree = "<group>"; };
+		9FFC0F511E0B987600EF64BE /* HIHAlbumDisplayTransitionAnimatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HIHAlbumDisplayTransitionAnimatorTests.m; path = Source/AlbumDisplay/Tests/HIHAlbumDisplayTransitionAnimatorTests.m; sourceTree = "<group>"; };
+		9FFC0F531E0C403200EF64BE /* HIHRoundedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HIHRoundedImageView.h; path = Source/Common/HIHRoundedImageView.h; sourceTree = "<group>"; };
+		9FFC0F541E0C403200EF64BE /* HIHRoundedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HIHRoundedImageView.m; path = Source/Common/HIHRoundedImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,13 +182,16 @@
 		9F6246F01E0A36D500C1DDF2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				9FFC0F251E0B39E400EF64BE /* Tests */,
 				9F6246FF1E0A399300C1DDF2 /* HIHAlbum.h */,
 				9F6247001E0A399300C1DDF2 /* HIHAlbum.m */,
+				9FFC0F4E1E0B951700EF64BE /* HIHCommonIndex.h */,
 				9F6247061E0A441D00C1DDF2 /* HIHHttpClient.h */,
 				9F6247071E0A441D00C1DDF2 /* HIHHttpClient.m */,
 				9F62471E1E0A658400C1DDF2 /* HIHImageCacheService.h */,
 				9F62471F1E0A658400C1DDF2 /* HIHImageCacheService.m */,
+				9FFC0F531E0C403200EF64BE /* HIHRoundedImageView.h */,
+				9FFC0F541E0C403200EF64BE /* HIHRoundedImageView.m */,
+				9FFC0F251E0B39E400EF64BE /* Tests */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -199,10 +209,12 @@
 		9F6247211E0AEC6700C1DDF2 /* AlbumDisplay */ = {
 			isa = PBXGroup;
 			children = (
-				9F6247221E0AEC9600C1DDF2 /* HIHAlbumDisplayViewController.h */,
-				9F6247231E0AEC9600C1DDF2 /* HIHAlbumDisplayViewController.m */,
+				9FFC0F501E0B971E00EF64BE /* Tests */,
+				9FFC0F4F1E0B964F00EF64BE /* HIHAlbumDisplayIndex.h */,
 				9FFC0F221E0B1DDB00EF64BE /* HIHAlbumDisplayTransitionAnimator.h */,
 				9FFC0F231E0B1DDB00EF64BE /* HIHAlbumDisplayTransitionAnimator.m */,
+				9F6247221E0AEC9600C1DDF2 /* HIHAlbumDisplayViewController.h */,
+				9F6247231E0AEC9600C1DDF2 /* HIHAlbumDisplayViewController.m */,
 			);
 			name = AlbumDisplay;
 			sourceTree = "<group>";
@@ -216,6 +228,14 @@
 				9FFC0F301E0B421900EF64BE /* HIHImageCacheServiceTests.m */,
 				9FFC0F381E0B5B4300EF64BE /* HIHMockUrlSession.h */,
 				9FFC0F391E0B5B4300EF64BE /* HIHMockUrlSession.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		9FFC0F501E0B971E00EF64BE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9FFC0F511E0B987600EF64BE /* HIHAlbumDisplayTransitionAnimatorTests.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -332,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FFC0F551E0C403200EF64BE /* HIHRoundedImageView.m in Sources */,
 				9F6247081E0A441D00C1DDF2 /* HIHHttpClient.m in Sources */,
 				9F6246EB1E0A369E00C1DDF2 /* main.m in Sources */,
 				9F6247201E0A658400C1DDF2 /* HIHImageCacheService.m in Sources */,
@@ -353,6 +374,7 @@
 				9FFC0F3B1E0B5B4800EF64BE /* HIHMockUrlSession.m in Sources */,
 				9FFC0F2C1E0B3F2000EF64BE /* HIHAlbumTests.m in Sources */,
 				9FFC0F311E0B421900EF64BE /* HIHImageCacheServiceTests.m in Sources */,
+				9FFC0F521E0B987600EF64BE /* HIHAlbumDisplayTransitionAnimatorTests.m in Sources */,
 				9F6247131E0A4C1D00C1DDF2 /* HIHSearchServiceTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

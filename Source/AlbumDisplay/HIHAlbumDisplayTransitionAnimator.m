@@ -9,13 +9,8 @@
 //  http://dativestudios.com/blog/2013/09/29/interactive-transitions/
 //
 
-#import "HIHAlbumDisplayTransitionAnimator.h"
-
-#import "HIHSearchViewController.h"
-#import "HIHAlbumDisplayViewController.h"
-#import "HIHSearchAlbumCell.h"
-
-
+#import "HIHSearchIndex.h"
+#import "HIHAlbumDisplayIndex.h"
 
 @implementation HIHAlbumDisplayTransitionAnimator
 

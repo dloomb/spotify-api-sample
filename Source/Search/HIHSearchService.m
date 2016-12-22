@@ -7,8 +7,8 @@
 //
 
 #import "HIHSearchService.h"
-#import "HIHHttpClient.h"
-#import "HIHAlbum.h"
+#import "HIHCommonIndex.h"
+
 
 NSString * const HIHSearchServiceEndpoint = @"https://api.spotify.com/v1/search?type=album&limit=10&q=";
 

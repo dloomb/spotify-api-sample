@@ -39,22 +39,6 @@
     [super tearDown];
 }
 
-
-//- (void)testItCorrectlyGeneratesAPathInTheCacheDirectory {
-//    NSString *url = @"https://host.com/a/b/c/image.jpg?thumb=true";
-//	NSString *key = [[HIHImageCacheService class] localPathForImageUrl:url];
-//	XCTAssertTrue([key rangeOfString:@"/tmp/HIHImageCache/image.jpg"].location != NSNotFound);
-//}
-//
-//- (void)testItCreatesTheCacheDirectory {
-//	BOOL before = [[NSFileManager defaultManager] fileExistsAtPath:self.cacheDirectory];
-//	[HIHImageCacheService ensureCacheDirectoryExists];
-//	BOOL after = [[NSFileManager defaultManager] fileExistsAtPath:self.cacheDirectory];
-//	
-//	XCTAssertFalse(before);
-//	XCTAssertTrue(after);
-//}
-
 - (void)testItDownloadsAnImage {
 	__block UIImage *result;
 	XCTestExpectation *expectation = [self expectationWithDescription:@"Image loaded from file"];
