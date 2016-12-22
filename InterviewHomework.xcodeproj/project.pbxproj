@@ -48,7 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9F6246A51E0A360B00C1DDF2 /* Main.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Main.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F6246A51E0A360B00C1DDF2 /* DLOOMB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DLOOMB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6246BE1E0A360B00C1DDF2 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6246DE1E0A368200C1DDF2 /* Main-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Main-Info.plist"; path = "Config/Main-Info.plist"; sourceTree = "<group>"; };
 		9F6246E01E0A368200C1DDF2 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "UnitTests-Info.plist"; path = "Config/UnitTests-Info.plist"; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 		9F6246A61E0A360B00C1DDF2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9F6246A51E0A360B00C1DDF2 /* Main.app */,
+				9F6246A51E0A360B00C1DDF2 /* DLOOMB.app */,
 				9F6246BE1E0A360B00C1DDF2 /* UnitTests.xctest */,
 			);
 			name = Products;
@@ -257,7 +257,7 @@
 			);
 			name = Main;
 			productName = InterviewHomework;
-			productReference = 9F6246A51E0A360B00C1DDF2 /* Main.app */;
+			productReference = 9F6246A51E0A360B00C1DDF2 /* DLOOMB.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9F6246BD1E0A360B00C1DDF2 /* UnitTests */ = {
@@ -488,7 +488,7 @@
 				INFOPLIST_FILE = "Config/Main-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dloomb.InterviewHomework;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DLOOMB;
 			};
 			name = Debug;
 		};
@@ -500,7 +500,7 @@
 				INFOPLIST_FILE = "Config/Main-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dloomb.InterviewHomework;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DLOOMB;
 			};
 			name = Release;
 		};
