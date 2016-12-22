@@ -8,12 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol HIHHttpClientInterface <NSObject>
+@interface HIHHttpClient : NSObject
 
+- (instancetype __nonnull)initWithUrlSession:(NSURLSession * _Nonnull)session;
 - (void)get:(NSString * _Nonnull)url completion:(void (^ _Nonnull)(NSError * _Nullable error, id _Nullable response))completion;
-
-@end
-
-@interface HIHHttpClient : NSObject <HIHHttpClientInterface>
 
 @end

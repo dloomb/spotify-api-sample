@@ -16,6 +16,7 @@ NSString * const HIHAlbumDisplayViewControllerStoryboardIdentifier = @"HIHAlbumD
 
 @interface HIHAlbumDisplayViewController () <UINavigationControllerDelegate>
 
+@property (nullable, atomic, strong) UIAlertController *errorAlert;
 @property (nonatomic, strong) UIPercentDrivenInteractiveTransition *interactivePopTransition;
 
 @property (weak, nonatomic) IBOutlet UILabel *albumNameLabel;
@@ -34,7 +35,7 @@ NSString * const HIHAlbumDisplayViewControllerStoryboardIdentifier = @"HIHAlbumD
 	[HIHImageCacheService loadImageWithUrl:self.album.imageUrl completion:^(NSError * _Nullable error, UIImage * _Nullable image) {
 		
 		if (error || !image) {
-#warning Unhandled error scenario
+			[self showAlertForError:error];
 		} else {
 			self.albumCoverImageView.image = image;
 		}
@@ -80,23 +81,21 @@ NSString * const HIHAlbumDisplayViewControllerStoryboardIdentifier = @"HIHAlbumD
 								  animationControllerForOperation:(UINavigationControllerOperation)operation
 											   fromViewController:(UIViewController *)fromVC
 												 toViewController:(UIViewController *)toVC {
-	// Check if we're transitioning from this view controller to a DSLFirstViewController
+
 	if (fromVC == self && [toVC isKindOfClass:[HIHSearchViewController class]]) {
 		return [[HIHAlbumDisplayTransitionAnimator alloc] initWithDirection:HIHAlbumDisplayTransitionAnimatorDirectionReverse];
-	}
-	else {
+	} else {
 		return nil;
 	}
 }
 
 - (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
 						 interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController {
-	// Check if this is for our custom transition
+
 	HIHAlbumDisplayTransitionAnimator *animator = animationController;
 	if ([animator respondsToSelector:@selector(direction)] && animator.direction == HIHAlbumDisplayTransitionAnimatorDirectionReverse) {
 		return self.interactivePopTransition;
-	}
-	else {
+	} else {
 		return nil;
 	}
 }
@@ -123,6 +122,21 @@ NSString * const HIHAlbumDisplayViewControllerStoryboardIdentifier = @"HIHAlbumD
 		self.interactivePopTransition = nil;
 	}
 	
+}
+
+
+
+#pragma mark - Error Handling
+
+- (void)showAlertForError:(NSError *)error {
+	if (self.errorAlert == nil) {
+		NSString *message = error.localizedDescription ?: @"Sorry, but an unexpected error occured. Please check you network connection and try again.";
+		self.errorAlert = [UIAlertController alertControllerWithTitle:@"Error" message:message preferredStyle:(UIAlertControllerStyleAlert)];
+		[self.errorAlert addAction:[UIAlertAction actionWithTitle:@"Dismiss" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+			self.errorAlert = nil;
+		}]];
+		[self presentViewController:self.errorAlert animated:true completion:nil];
+	}
 }
 
 

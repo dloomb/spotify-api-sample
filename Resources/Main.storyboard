@@ -158,13 +158,6 @@
                                                         <constraint firstItem="26k-9z-PT4" firstAttribute="leading" secondItem="dr0-ze-0wO" secondAttribute="leading" id="xPJ-u8-ldz"/>
                                                     </constraints>
                                                 </view>
-                                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLC-Ek-caX">
-                                                    <rect key="frame" x="0.0" y="149" width="375" height="1"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="1" id="xPr-11-XVk"/>
-                                                    </constraints>
-                                                </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divider" translatesAutoresizingMaskIntoConstraints="NO" id="AbI-4v-4Rq">
                                                     <rect key="frame" x="0.0" y="149" width="375" height="1"/>
                                                     <constraints>
@@ -177,13 +170,10 @@
                                             <constraint firstItem="dr0-ze-0wO" firstAttribute="leading" secondItem="pAN-mS-Psf" secondAttribute="trailing" constant="16" id="6d5-KQ-xtq"/>
                                             <constraint firstAttribute="bottom" secondItem="AbI-4v-4Rq" secondAttribute="bottom" id="8b7-1f-AIy"/>
                                             <constraint firstAttribute="bottom" secondItem="pAN-mS-Psf" secondAttribute="bottom" constant="16" id="FpG-nO-Eyj"/>
-                                            <constraint firstAttribute="bottom" secondItem="yLC-Ek-caX" secondAttribute="bottom" id="KUY-t0-eeS"/>
-                                            <constraint firstAttribute="trailing" secondItem="yLC-Ek-caX" secondAttribute="trailing" id="RfY-o1-wQp"/>
                                             <constraint firstItem="pAN-mS-Psf" firstAttribute="leading" secondItem="iAP-I4-ZZz" secondAttribute="leading" constant="16" id="Wkw-yo-CJM"/>
                                             <constraint firstItem="aLx-eR-ntv" firstAttribute="top" secondItem="iAP-I4-ZZz" secondAttribute="top" constant="16" id="YFO-lm-abd"/>
                                             <constraint firstAttribute="trailing" secondItem="AbI-4v-4Rq" secondAttribute="trailing" id="gAq-WR-4ZH"/>
                                             <constraint firstItem="aLx-eR-ntv" firstAttribute="leading" secondItem="iAP-I4-ZZz" secondAttribute="leading" constant="16" id="kbx-kw-R4E"/>
-                                            <constraint firstItem="yLC-Ek-caX" firstAttribute="leading" secondItem="iAP-I4-ZZz" secondAttribute="leading" id="lUK-Lx-tYA"/>
                                             <constraint firstItem="AbI-4v-4Rq" firstAttribute="leading" secondItem="iAP-I4-ZZz" secondAttribute="leading" id="rMS-cd-rwc"/>
                                             <constraint firstItem="pAN-mS-Psf" firstAttribute="top" secondItem="iAP-I4-ZZz" secondAttribute="top" constant="16" id="sP6-SC-VBK"/>
                                             <constraint firstAttribute="trailing" secondItem="dr0-ze-0wO" secondAttribute="trailing" constant="16" id="xFY-jC-FC1"/>
@@ -191,34 +181,12 @@
                                             <constraint firstAttribute="bottom" secondItem="aLx-eR-ntv" secondAttribute="bottom" constant="16" id="xbh-hM-DN8"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="bottomBorderView" destination="yLC-Ek-caX" id="sq8-DM-7me"/>
+                                            <outlet property="dividerImageView" destination="AbI-4v-4Rq" id="j70-k8-bJX"/>
                                             <outlet property="imageView" destination="pAN-mS-Psf" id="3iF-hf-RN1"/>
                                             <outlet property="secondaryLabel" destination="26k-9z-PT4" id="BYJ-fu-TAk"/>
                                             <outlet property="shadowView" destination="aLx-eR-ntv" id="l1D-22-yJh"/>
                                             <outlet property="titleLabel" destination="72U-pq-CYM" id="knT-Pa-7Zd"/>
                                         </connections>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LoadingCell" id="cdy-d9-mAk">
-                                        <rect key="frame" x="0.0" y="150" width="375" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="7LV-d8-p5T">
-                                                    <rect key="frame" x="157.5" y="45.5" width="60" height="60"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="60" id="eqj-Bp-WsS"/>
-                                                        <constraint firstAttribute="height" constant="60" id="oNx-VB-gVI"/>
-                                                    </constraints>
-                                                    <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </activityIndicatorView>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="7LV-d8-p5T" firstAttribute="centerY" secondItem="cdy-d9-mAk" secondAttribute="centerY" id="3SZ-QK-Yqa"/>
-                                            <constraint firstItem="7LV-d8-p5T" firstAttribute="centerX" secondItem="cdy-d9-mAk" secondAttribute="centerX" id="hOK-qx-XpE"/>
-                                        </constraints>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>

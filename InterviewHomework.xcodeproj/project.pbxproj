@@ -17,7 +17,6 @@
 		9F6247011E0A399300C1DDF2 /* HIHAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6247001E0A399300C1DDF2 /* HIHAlbum.m */; };
 		9F6247041E0A3AD800C1DDF2 /* HIHSearchInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6247031E0A3AD800C1DDF2 /* HIHSearchInputView.m */; };
 		9F6247081E0A441D00C1DDF2 /* HIHHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6247071E0A441D00C1DDF2 /* HIHHttpClient.m */; };
-		9F62470C1E0A451F00C1DDF2 /* HIHMockHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F62470A1E0A451C00C1DDF2 /* HIHMockHttpClient.m */; };
 		9F6247131E0A4C1D00C1DDF2 /* HIHSearchServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6247111E0A4C1900C1DDF2 /* HIHSearchServiceTests.m */; };
 		9F6247171E0A541B00C1DDF2 /* query_ok_200_res.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F62470F1E0A4A2900C1DDF2 /* query_ok_200_res.json */; };
 		9F6247181E0A541B00C1DDF2 /* query_bad_400_res.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F6247151E0A541400C1DDF2 /* query_bad_400_res.json */; };
@@ -33,6 +32,7 @@
 		9FFC0F311E0B421900EF64BE /* HIHImageCacheServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFC0F301E0B421900EF64BE /* HIHImageCacheServiceTests.m */; };
 		9FFC0F331E0B477500EF64BE /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FFC0F321E0B477500EF64BE /* test.png */; };
 		9FFC0F341E0B47BC00EF64BE /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FFC0F321E0B477500EF64BE /* test.png */; };
+		9FFC0F3B1E0B5B4800EF64BE /* HIHMockUrlSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFC0F391E0B5B4300EF64BE /* HIHMockUrlSession.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,8 +67,6 @@
 		9F6247051E0A435700C1DDF2 /* HIHSearchIndex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HIHSearchIndex.h; path = Source/Search/HIHSearchIndex.h; sourceTree = "<group>"; };
 		9F6247061E0A441D00C1DDF2 /* HIHHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HIHHttpClient.h; path = Source/Common/HIHHttpClient.h; sourceTree = "<group>"; };
 		9F6247071E0A441D00C1DDF2 /* HIHHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HIHHttpClient.m; path = Source/Common/HIHHttpClient.m; sourceTree = "<group>"; };
-		9F6247091E0A451C00C1DDF2 /* HIHMockHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HIHMockHttpClient.h; path = Source/Common/HIHMockHttpClient.h; sourceTree = "<group>"; };
-		9F62470A1E0A451C00C1DDF2 /* HIHMockHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HIHMockHttpClient.m; path = Source/Common/HIHMockHttpClient.m; sourceTree = "<group>"; };
 		9F62470F1E0A4A2900C1DDF2 /* query_ok_200_res.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = query_ok_200_res.json; path = Source/Search/Tests/query_ok_200_res.json; sourceTree = "<group>"; };
 		9F6247111E0A4C1900C1DDF2 /* HIHSearchServiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HIHSearchServiceTests.m; path = Source/Search/Tests/HIHSearchServiceTests.m; sourceTree = "<group>"; };
 		9F6247151E0A541400C1DDF2 /* query_bad_400_res.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = query_bad_400_res.json; path = Source/Search/Tests/query_bad_400_res.json; sourceTree = "<group>"; };
@@ -84,6 +82,8 @@
 		9FFC0F2D1E0B3F8200EF64BE /* album.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = album.json; path = Source/Common/Tests/album.json; sourceTree = "<group>"; };
 		9FFC0F301E0B421900EF64BE /* HIHImageCacheServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HIHImageCacheServiceTests.m; path = Source/Common/Tests/HIHImageCacheServiceTests.m; sourceTree = "<group>"; };
 		9FFC0F321E0B477500EF64BE /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test.png; path = Source/Common/Tests/test.png; sourceTree = "<group>"; };
+		9FFC0F381E0B5B4300EF64BE /* HIHMockUrlSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HIHMockUrlSession.h; path = Source/Common/Tests/HIHMockUrlSession.h; sourceTree = "<group>"; };
+		9FFC0F391E0B5B4300EF64BE /* HIHMockUrlSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HIHMockUrlSession.m; path = Source/Common/Tests/HIHMockUrlSession.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,8 +214,8 @@
 				9FFC0F2D1E0B3F8200EF64BE /* album.json */,
 				9FFC0F2B1E0B3F2000EF64BE /* HIHAlbumTests.m */,
 				9FFC0F301E0B421900EF64BE /* HIHImageCacheServiceTests.m */,
-				9F6247091E0A451C00C1DDF2 /* HIHMockHttpClient.h */,
-				9F62470A1E0A451C00C1DDF2 /* HIHMockHttpClient.m */,
+				9FFC0F381E0B5B4300EF64BE /* HIHMockUrlSession.h */,
+				9FFC0F391E0B5B4300EF64BE /* HIHMockUrlSession.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -350,8 +350,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FFC0F3B1E0B5B4800EF64BE /* HIHMockUrlSession.m in Sources */,
 				9FFC0F2C1E0B3F2000EF64BE /* HIHAlbumTests.m in Sources */,
-				9F62470C1E0A451F00C1DDF2 /* HIHMockHttpClient.m in Sources */,
 				9FFC0F311E0B421900EF64BE /* HIHImageCacheServiceTests.m in Sources */,
 				9F6247131E0A4C1D00C1DDF2 /* HIHSearchServiceTests.m in Sources */,
 			);

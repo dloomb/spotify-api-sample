@@ -16,4 +16,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *queryTextField;
 @property (weak, nonatomic) IBOutlet UIView *bottomBorderView;
 
+- (void)updateScreenPosition:(BOOL)animated;
+
 @end

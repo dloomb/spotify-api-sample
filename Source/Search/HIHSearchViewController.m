@@ -16,19 +16,22 @@
 @interface HIHSearchViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UINavigationControllerDelegate>
 
 @property (nonnull, nonatomic, strong) HIHSearchService *searchService;
-@property (nonnull, nonatomic, strong) NSMutableArray *data;
+@property (nonnull, nonatomic, strong) NSArray *data;
+@property (nullable, atomic, strong) UIAlertController *errorAlert;
+@property (atomic) NSInteger queryId;
+
 
 @property (weak, nonatomic) IBOutlet HIHSearchInputView *searchInputView;
+
 
 @end
 
 @implementation HIHSearchViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+	[super viewDidLoad];
 	
 	self.searchService = [[HIHSearchService alloc] init];
-	self.data = [NSMutableArray array];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -45,10 +48,26 @@
 	}
 }
 
-
-
 - (BOOL)prefersStatusBarHidden {
 	return true;
+}
+
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+	CGFloat duration = 0.2;
+	[UIView animateWithDuration:duration animations:^{
+		self.collectionView.alpha = 0;
+	} completion:^(BOOL finished) {
+		[self.collectionView reloadData];
+		[UIView animateWithDuration:duration animations:^{
+			self.collectionView.alpha = 1;
+		}];
+	}];
+	
+	
+	// Fire on next run loop
+	dispatch_async(dispatch_get_main_queue(), ^{
+		[self.searchInputView updateScreenPosition:true];
+	});
 }
 
 
@@ -59,11 +78,10 @@
 								  animationControllerForOperation:(UINavigationControllerOperation)operation
 											   fromViewController:(UIViewController *)fromVC
 												 toViewController:(UIViewController *)toVC {
-	// Check if we're transitioning from this view controller to a DSLSecondViewController
+	
 	if (fromVC == self && [toVC isKindOfClass:[HIHAlbumDisplayViewController class]]) {
-		return [[HIHAlbumDisplayTransitionAnimator alloc] init];
-	}
-	else {
+		return [[HIHAlbumDisplayTransitionAnimator alloc] initWithDirection:HIHAlbumDisplayTransitionAnimatorDirectionForward];
+	} else {
 		return nil;
 	}
 }
@@ -82,9 +100,10 @@
 	
 	HIHAlbum *album = self.data[indexPath.item];
 	
-	cell.bottomBorderView.alpha = indexPath.item < self.data.count - 1;
+	cell.dividerImageView.alpha = indexPath.item < self.data.count - 1;
 	cell.titleLabel.text = album.title;
 	cell.secondaryLabel.text = album.artist;
+	cell.imageView.image = nil;
 	
 	NSInteger tag = cell.tag + 1;
 	cell.tag = tag;
@@ -92,7 +111,7 @@
 	[HIHImageCacheService loadImageWithUrl:album.thumbnailUrl completion:^(NSError * _Nullable error, UIImage * _Nullable image) {
 		
 		if (error || !image) {
-			#warning Unhandled error scenario
+			[self showAlertForError:error];
 		} else if (cell.tag == tag) {
 			cell.imageView.image = image;
 		}
@@ -132,7 +151,8 @@
 		[self performSelector:@selector(performQuery) withObject:nil afterDelay:0.3];
 		
 	} else if (self.data.count) {
-		[self.data removeAllObjects];
+		self.queryId++;
+		self.data = @[];
 		[self.collectionView reloadData];
 	}
 	
@@ -146,22 +166,49 @@
 - (void)performQuery {
 	NSString *query = self.searchInputView.queryTextField.text;
 	
+	NSInteger queryId = self.queryId + 1;
+	self.queryId = queryId;
+	
+	self.data = @[];
+	[self.collectionView reloadData];
+	
 	[self.searchService search:query completion:^(NSError * _Nullable error, NSArray<HIHAlbum *> * _Nullable response) {
-		if (error) {
-			#warning Unhandled error scenario
-		} else {
-			[self.data addObjectsFromArray:response];
-			[self.collectionView performBatchUpdates:^{
+		if (self.queryId == queryId) {
+			
+			if (error) {
+				[self showAlertForError:error];
+			} else {
 				
-				NSMutableArray *indexes = [NSMutableArray array];
-				for (int i = 0; i < response.count; i++) {
-					[indexes addObject:[NSIndexPath indexPathForItem:i inSection:0]];
-				}
-				[self.collectionView insertItemsAtIndexPaths:indexes];
+				self.data = response ?: @[];
+				[self.collectionView performBatchUpdates:^{
+					NSMutableArray *indexes = [NSMutableArray array];
+					for (int i = 0; i < response.count; i++) {
+						[indexes addObject:[NSIndexPath indexPathForItem:i inSection:0]];
+					}
+					[self.collectionView insertItemsAtIndexPaths:indexes];
+					
+				} completion:nil];
 				
-			} completion:nil];
+			}
 		}
+		
 	}];
+}
+
+
+
+
+#pragma mark - Error Handling
+
+- (void)showAlertForError:(NSError *)error {
+	if (self.errorAlert == nil) {
+		NSString *message = error.localizedDescription ?: @"Sorry, but an unexpected error occured. Please check you network connection and try again.";
+		self.errorAlert = [UIAlertController alertControllerWithTitle:@"Error" message:message preferredStyle:(UIAlertControllerStyleAlert)];
+		[self.errorAlert addAction:[UIAlertAction actionWithTitle:@"Dismiss" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+			self.errorAlert = nil;
+		}]];
+		[self presentViewController:self.errorAlert animated:true completion:nil];
+	}
 }
 
 

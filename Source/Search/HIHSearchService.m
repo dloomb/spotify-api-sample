@@ -14,7 +14,7 @@ NSString * const HIHSearchServiceEndpoint = @"https://api.spotify.com/v1/search?
 
 @interface HIHSearchService ()
 
-@property (strong, nonatomic) id<HIHHttpClientInterface> http;
+@property (strong, nonatomic) HIHHttpClient *http;
 
 @end
 
@@ -24,21 +24,14 @@ NSString * const HIHSearchServiceEndpoint = @"https://api.spotify.com/v1/search?
 {
 	self = [super init];
 	if (self) {
-		self.http = [[HIHHttpClient alloc] init];
-	}
-	return self;
-}
-
-- (instancetype)initWithHttpClient:(id<HIHHttpClientInterface>)http {
-	self = [super init];
-	if (self) {
-		self.http = http;
+		self.http = [[HIHHttpClient alloc] initWithUrlSession:[NSURLSession sharedSession]];
 	}
 	return self;
 }
 
 - (void)search:(NSString *)query completion:(void (^)(NSError * _Nullable, NSArray<HIHAlbum *> * _Nullable))completion {
-	NSString *url = [HIHSearchServiceEndpoint stringByAppendingString:query];
+	NSString *safeQuery = [query stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+	NSString *url = [HIHSearchServiceEndpoint stringByAppendingString:safeQuery];
 	[self.http get:url completion:^(NSError * _Nullable error, id  _Nullable response) {
 		
 		if (error) {

@@ -44,6 +44,9 @@
 	HIHSearchViewController *fromController = (id)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
 	HIHAlbumDisplayViewController *toController = (id)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
 	
+	[toController.view layoutIfNeeded];
+	[toController.view layoutSubviews];
+	
 	UIView *containerView = [transitionContext containerView];
 	NSTimeInterval duration = [self transitionDuration:transitionContext];
 	
@@ -103,8 +106,6 @@
 	toController.view.frame = [transitionContext finalFrameForViewController:toController];
 	[containerView insertSubview:toController.view belowSubview:fromController.view];
 	[containerView addSubview:snapshot];
-	
-	
 	
 	[UIView animateWithDuration:duration animations:^{
 		
